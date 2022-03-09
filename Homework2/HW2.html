@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="HW2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <div class="header">
+                <h1>Client Details</h1>
+                <h4>Enter the details of all incoming clients.</h4>
+            </div>
+            <table>
+                <tr>
+                    <td><label for="ClientName">Client Name<em>*</em></label></td>
+                    <td><input type="text" id="ClientName"></td>
+                </tr>
+                <tr>
+                    <td><label for="CompanyName">Company<em>*</em></label></td>
+                    <td><input type="text" id="CompanyName"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Title</label></td>
+                    <td><input type="text" id="Title"></td>
+                </tr>
+                <tr>
+                    <td><label>Department<em>*</em></label></td>
+                    <td><select name="" id="select-option">
+                        <option selected="true" value="-Select-">-Select-</option>
+                        <option value="Dept1">Dept1</option>
+                        <option value="Dept2">Dept2</option>
+                        <option value="Dept3">Dept3</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Preferred contact method<em>*</em></label></td>
+                    <td>
+                        <input type="radio" name="ContactMethod" value="Email" id="EmailRB"/><label for="Email">Email</label>
+                        <input type="radio" name="ContactMethod" value="Phone" id="PhoneRB"/><label for="Phone">Phone</label>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td><input type="text" id="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">Phone</label></td>
+                    <td><input type="text" id="Phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="CompanyAddress">Company Address<em>*</em></label></td>
+                    <td>
+                        <input type="text" id="Street"><br>
+                        <small>Street Address</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="text" id="Address2"><br>
+                        <small>Address Line 2</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <table class="smallTable">
+                            <tr>
+                                <td style="padding-left: 0px;padding-top: 0px;">
+                                    <input type="text" id="City" style="width: 180px;padding: 0px;"><br>
+                                    <small>City</small>
+                                </td>
+                                <td style="padding-left: 0px;padding-top: 0px;">
+                                    <input type="text" id="S/R/P" style="width: 180px;padding: 0px;"><br>
+                                    <small>State/Region/Province</small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 0px;padding-top: 0px;">
+                                    <input type="text" id="P/ZC" style="width: 180px;padding: 0px;"><br>
+                                    <small>Postal / Zip Code</small>
+                                </td>
+                                <td style="padding-left: 0px;padding-top: 0px;">
+                                    <select name="Country" id="Country" style="width: 180px;padding: 0px;">
+                                        <option selected="true" value="-Select-">-Select-</option>
+                                        <option value="Tàu khựa">Tàu khựa</option>
+                                        <option value="VN">VN</option>
+                                        <option value="US">US</option>
+                                    </select>
+                                    <small>Country</small>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="CompanyWebsite">Company Website<em>*</em></label></td>
+                    <td><input type="text" id="CompanyWebsite"></td>
+                </tr>
+                <tr>
+                    <td><label for="CompanyLogo">Company Logo</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><label for="WorkingHours">Working Hours<em>*</em></label></td>
+                    <td><input type="text" id="WorkingHours"></td>
+                </tr>
+                <tr>
+                    <td><label for="WorkingDays">Working Days<em>*</em></label></td>
+                    <td><input type="text" id="WorkingDays"></td>
+                </tr>
+                <tr>
+                    <td><label for="BillingCycle">Billing Cycle<em>*</em></label></td>
+                    <td><input type="text" id="BillingCycle"></td>
+                </tr>
+                <tr>
+                    <td><label for="AdditionalInformation">Additional Information</label></td>
+                    <td rowspan="2"><textarea name="" id="" cols="49" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <button disabled>Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

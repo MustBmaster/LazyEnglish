@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<!-- ctrl+/ để bắt đầu mở chú thích-->
+<!-- gõ html:5 để ra mặc định 1 file -->
+<!-- hướng dẫn thêm về các thẻ trong html
+    1. h1->h6 -các thẻ heading: là tiêu đề bài viết, nhỏ dần từ 1-6
+    2. p -paragraph: các đoạn văn bản
+    3. img -image:thẻ hình ảnh với các thuộc tính:
+        src-source: nguồn ảnh: đưa link ảnh vào là dc
+        alt: dùng để tạo tiêu đề hiển thị ảnh khi nó lỗi
+    4. a -anchor: thẻ neo liên kết với thuộc tính href: đưa link cần đi vào trong " ", 
+        giữa thẻ a có thể điền nội dung, có thể thêm thuộc tính target="blank" để nó mở tab mới với link kia
+    5. ul,li,ol -unordered list,list,ordered: hiển thị danh sách có chấm hoặc đánh số. 1 vài thuộc tính có thể kể như start là làm cho nó bắt đầu từ đâu
+    6. table -thẻ tạo bảng
+        chi tiêt hơn: trong bảng sẽ có 2 thẻ con là thead và tbody
+        với thẻ thead, bên trong nó sẽ là các thẻ th tương ứng với số cột, nội dung bên trong là nội dung cột
+        với thẻ tbody, bên trong nó là các thẻ tr tương ứng với các hàng,
+        trong các thẻ tr có các thẻ td tương ứng với các nội dung hàng ứng với côt
+    7. input: nhận thông tin vào, với thuộc tính type là dạng dữ liệu đầu vào, có thể là text,checkbox,radio
+    8. button: nút, nội dung trong thẻ nằm trong nút bấm
+    9. br-break: xuống dòng
+    10. div: thẻ khối, dùng để bao quanh 1 vùng các component
+    11. title: tựa đề, là nội dung sẽ hiển thị trên tab của trình duyệt
+    12. <meta charset="utf-8"> để hỗ trợ hiển thị ngôn ngữ tiếng việt trên trình duyệt
+-->
+
+<!-- hướng dẫn về các thuộc tính của thẻ
+    sẽ học sau
+-->
+
+<!-- hướng dẫn sử dụng css cho file html
+    có 3 cách:
+    1.Internal: viết css trong 1 thẻ bất kì của file html với thẻ style
+    2.External: viết css trong 1 file đuôi css, 
+        trong thẻ head của html phải có 1 thẻ link với thuộc tính href trỏ tới file css
+        trong file css thì ko cần thêm thẻ style mà viết thẳng thẻ cần hiệu ứng và các thuộc tính luôn
+    3.Inline: viết trực tiếp css dưới dạng thuộc tính 1 thẻ:
+        thêm thuộc tính style vào trong thẻ và liệt kê các thuộc tính css bên trong
+ -->
+
+<!-- hướng dẫn về CSS selector
+    nhằm mục đích tránh cài css chung cho nhiều thẻ có tên giống nhau, ta có class và id
+    1. id: là 1 thuộc tính của thể giúp ta đặt tên thẻ để tránh lẫn với các component có cùng loại thẻ
+        tránh đặt 2 thẻ có id trong nhau
+        trỏ tới id sử dụng # trong file css
+    2. class: nhằm mục đích sử dụng để css trỏ tới nhiều thẻ cần tác dộng mà không làm ảnh hưởng tới thread (vì dùng id thì sẽ ảnh hưởng)
+        1 thẻ có thể có nhiều class bằng việc để tên các class trong thuộc tính class cách nhau bằng 
+        trỏ tới class sử dụng . trong file css
+ -->
+
+<!-- hướng dẫn về mức độ ưu tiên của css
+    1.giữa internal và external: thg nào viết trc thg đấy ưu tiên cao 
+    (so sánh cái link của external với vị trí của cái thẻ style của internal)
+    2. thứ tự ưu tiên: inline(1000) >> id(100) >> class(10) >> tag (1)(gọi tới 1 thẻ j đấy)
+    3. với các việc gọi tới cùng 1 cấp ưu tiên thì cái nào mới hơn dc ưu tiên
+    4. so sánh việc gọi tới 1 selector phức hợp nhiều cấp, 
+    thì cộng hết điểm từng cấp vào rối so sánh- lớn hơn thì ưu tiên
+    5. với các selector toàn cục(*) và các selector có thuộc tính kế thừa bới các thẻ thì nó có độ ưu tiên thấp nhất
+    6. các selector có thuộc tính với tính chất !importain thì ưu tiên cao nhất (trên mọi thứ)
+-->
+
+<!--phần đầu-->
+<head>
+    <title>master html and css</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <!-- ví dụ Internal css với 2 thuộc tính là color và font style cho thẻ h1-->
+    <!-- <style>
+        h1 {
+            color: red; 
+            font-size: 20px;
+        }
+    </style> -->
+</head>
+<!-- phần thân -->
+
+<body>
+    <!-- đưới đây là 1 thẻ script, có thể viết js trực tiếp trong thẻ hoặc có thể lấy từ 1 file js như dưới đây -->
+    <script src="main.js"></script>
+    <div>
+        <!-- có thể bôi đen đoạn code cần vô hiêu hóa và thực hiện ctrl+/ -->
+        <!-- tui sẽ master css và html  -->
+        <h1>đây là 1 cái heading trong thẻ h1</h1>
+        <p>đây là 1 đoạn paragrap trong thẻ p</p>
+        <!-- ví dụ Inline css -->
+        <p style="color:red">đây là 1 đoạn paragrap trong thẻ p đã có css inline với thuộc tính color:red</p>
+        <!-- ví dụ về css selector tới 1 thẻ có id, cụ thể là thẻ h1 có id=heading1, trong file css đã có thuộc tính màu đỏ-->
+        <h1 id="heading1">đây là 1 cái heading trong thẻ h1 có thuộc tính id=heading1</h1>
+        <img src="https://i.pinimg.com/originals/5b/19/13/5b191320ab31da178992c899a61dce1c.jpg" alt="ảnh trong thẻ img">
+        <a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw" target="blank">youtube của cold play</a>
+        <ul>
+            <li>nội dung só 1 trong 1 thẻ li</li>
+            <li>lệnh li*n sẽ tạo ra n thẻ li</li>
+        </ul>
+        <!-- ví dụ về 2 thẻ li có chung 1 class được css đưa về màu xanh -->
+        <ul>
+            <li class="list">thẻ li 1 của class list</li>
+            <li class="list">thẻ li 2 của class list</li>
+        </ul>
+        <table>
+            <thead>
+                <th>cột 1</th>
+                <th>cột 2</th>
+                <th>cột 3</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>h1c1</td>
+                    <td>h1c2</td>
+                    <td>h1c3</td>
+                </tr>
+                <tr>
+                    <td>h2c1</td>
+                    <td>h2c2</td>
+                    <td>h2c3</td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="text"> <input type="checkbox"> <input type="radio">
+        <br>
+        <button>nút bấm</button>
+    </div>
+    <div>
+        <input name="gender" type="radio">Nam<input name="gender" type="radio"> Nữ<input name="gender" type="radio">Khác
+    </div>
+    <div>
+        <h1 id="pseudoClass">đây là 1 thẻ h1 có gắn các thuộc tính css lớp giả</h1>
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

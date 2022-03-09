@@ -1,0 +1,27 @@
+
+/* hoc về padding, border và margin 
+    khi 1 nội dung được viết ra trong 1 khối, được trỏ tới bởi 1 selector, thì gốc của nó là content
+    padding:  là lớp nên đệm bao quanh content, các tham số như sau
+        1 tham số: tất cả các phía
+        2 tham số: dọc-ngang
+        3 tham số: trên-ngang-dưới
+        4 tham số: trên-phải dưới trái
+    border: lớp biên bao quanh padding
+*/
+.box{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    color: aliceblue;
+    align-content: center;
+    /* căn cho content vào giữa */
+    justify-content: center;
+    background-color: green;
+    /* 1 tham số */
+    padding: 20px; 
+    /* border và các thuộc tính */
+    border: 10px 20px;
+    border-color: red ;
+    border-style: dotted;
+    border-style: solid;
+}

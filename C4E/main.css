@@ -1,0 +1,71 @@
+h1 {
+    color: black;
+    font-size: larger;
+}
+.box{
+    width: 100%;
+    height: 50px;
+    background: red;
+}
+/* #heading1 {
+    color: red;
+} */
+.list{
+    color: blue;
+}
+/*sử dụng biến trong css 
+    nhằm mục đích sử dung các tham số của 1 thuộc tính nhiều lần đối với nhiều selector, dễ sửa hàng loạt
+    khai báo bằng selector :root
+    bên trong selector sẽ là: --TênBiến: GiáTrị
+    sử dụng biến trong selector thì giá trị của thuộc tính selector sẽ là var(--TênBiến)
+    ví dụ bên dưới
+*/
+:root{
+    --newcolor: green;
+}
+#heading1{
+    color: var(--newcolor);
+}
+/* các đơn vị cơ bản trong css
+    Abs:đơn vị tuyệt đối, không thay đổi khi đổi kích thước browser
+        px - pixel :
+    relative: tương đối, đơn vị này sẽ so với 1 cái gì đó
+        % - phần trăm: so với kích thước thẻ chứa nó
+        rem - N rem sẽ bằng đúng N lần kích cỡ đã quy định trong thẻ html  
+        em - N em sẽ bằng đúng N lần thẻ gần nhất có thuộc tính tương tự
+        vw,vh -viewport width/height N vw/vh bằng N% kích thước ngang/dọc so với trình duyệt
+*/
+
+/* các function trong css
+    là các giá trị của thuộc tính trong các selector của css
+        rgb(x,y,z) : là function quyết định màu rgb với 3 tham số
+        calc(biểu thức toán) :function này cho phép thực hiện các biểu thức số học với các đơn vị trong css
+        attr() : là function lấy ra thuộc tính
+ */
+
+/* lớp giả css
+    :root - tham chiếu tới lớp bao trùm tài liệu css
+    :hover - khi bị trỏ tới bởi con chuột thì mới ra hiệu ứng của selector
+    :active -khi click thì mới đổi màu
+    :first-child - chọn tới phần tử đầu tiên là tập con trong 1 tập con phần tử thuộc 1 thẻ
+ */
+ /* test thử lớp giả */
+ 
+ /* #pseudoClass:active{
+    color: red;
+ } */
+ #pseudoClass:hover{
+    color: red;
+}
+/* pseudo element: phần tử giả 
+    được sử dụng để cài thuộc tính css cho từng vùng của 1 selector css, trong file css thì nó dùng "::" để gọi
+    ::before - trỏ tới phần tử đầu tiên trong 1 thẻ html dc selector của css tác động 
+    (nếu cài màu cho 1 tập 10 thẻ h1 có màu đỏ thì cái h1::before sẽ có màu đỏ)
+    ::after - trỏ lớp cái phần tử cuối dc tác động trong 1 tập phần tử bị tác động
+    ::first-letter - trỏ tới chữ cái đầu tiên của đoạn văn bản dc selector trỏ tới
+    ::first-line - trỏ tới dòng đầu tiên của phần tử dc selector trỏ tới
+    ::selection - thuộc tính khi bôi đen
+*/
+#pseudoClass::selection{
+    color: greenyellow;
+}

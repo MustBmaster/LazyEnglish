@@ -1,0 +1,22 @@
+thường nên có 1 cái div class container để chứa các nội dung bên trong body
+thuộc tính của container thì nên luôn luôn để margin: 0 auto để cho trang luôn có nội dung để vào giữa
+
+    với thuộc tính display: 
+inline:độ dài rộng ko tự set mà theo cái content bên trong
+block: nó sẽ chỉnh dc độ dài dộng và chiếm full màn
+inline-block: vừa theo content vừa chỉnh dài rộng
+none: làm cho nó mất luôn, thường để kèm theo js khi muốn hiển thị thông báo dạng pop-up
+
+
+đối với việc set độ dài rộng, để responsive tốt thì nên để thuộc tính width 100% và chỉnh cái max-width cho nó nhanh
+thuộc tính overflow: auto khi nội dung có bề dộng dài hơn cái container chứa nó thì sẽ tạo 1 thanh kéo để duyệt qua nôi dung
+
+với các thuộc tính kiểu trải dài theo chiều rộng của trang thì nên nhét vào 1 thẻ div
+ảnh thì nên có thêm 1 thuộc tính là object-fit: cover thì ảnh vỡ cũng đẹp
+
+với đầu file css nên set các thuộc tính mặc định như sau để tránh tự tạo margin và border và padding
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}

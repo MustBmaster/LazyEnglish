@@ -1,0 +1,14 @@
+thẻ table: bên trong là các thẻ tr-table row và td-cột hoặc th-table head
+tr và td có thể rowspan=[] và colspan=[] nhằm mục đich gộp cột và hàng
+
+
+thẻ form nó có 2 thuộc tính là method và action
+method kiểu get,post
+action là link xử lí form
+
+các thẻ trong form
+label: nhãn
+input: nhập text, có thuộc tính type có thể là text/password/color/datetime/date/checkbox/radio/file
+select: bên trong là các thẻ option, nó là cái dropdown option ấy mà. nó có thể có thuộc tính multiple(cho phép chọn nhiều)
+textarea với các thuộc tính rows và cols cho phép nhập nhiều dòng
+với radio button thì name giống nhau thì mới chỉ có 1 cái active

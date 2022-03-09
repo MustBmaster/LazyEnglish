@@ -1,0 +1,20 @@
+    các thuộc tính css position: position thường đi thành 1 combo(top-left-right-bottom-position) 
+ví dụ nằm ở trang này, cho bé màn lại thì làm dễ hơn:https://www.w3schools.com/cssref/playit.asp?filename=playcss_position&preval=relative
+relative: top và left của nó sẽ là tương đối so với trình duyệt chỉnh vị trí sẽ so với trình duyệt
+absolute: các thuộc tính vị trí sẽ là tính từ lề của 1 thg cha mang thuộc tính relative
+fixed: như absolute, luôn luôn nhận cửa sổ trình duyệt là cha
+sticky: bị kéo lê đi khi cửa sổ chạy qua nó
+z-index: mặc định là 0, thg nào có z-index lớn hơn thì nằm trên, chỉ áp dụng cho các position khác static
+
+    các thuộc tính display
+inline: chiếm bằng diện tích bằng nội dung và ko áp dụng modelbox
+block: chiếm toàn bộ chiều dộng và áp dụng dc modelbox
+inline-block: chiếm diện tích nội dung và có áp dụng modelbox
+flex: sử dụng trục ngang làm trục chính
+flex-direction: thay đổi trục flex và thứ tự hiển thị theo trục
+justify-content: thay đổi theo trục chính
+https://codepen.io/enxaneta/full/adLPwv/
+https://docs.google.com/presentation/d/1XsOaiUyKMokW7i4w1WEvxaMqtv-geob5aVGpO0A424E/edit#slide=id.gc6f919934_0_0
+https://glitch.com/edit/#!/c4ejs-session4-display-position-flex
+
+nên tăng cường dùng flex thay vì block
