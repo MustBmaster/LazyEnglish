@@ -1,0 +1,119 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    
+}
+body{
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #EAF4F6;
+}
+.content{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #CBE6EA;
+}
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 20px;
+    background-color: #EAF4F6;
+}
+.nav-list{
+    display: inline-flex;
+    margin: 0%;
+}
+.nav-item{
+    list-style: none;
+    margin: 20px;
+}
+.name{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #CBE6EA;
+    gap: 40px;
+}
+.thinline{
+    height: 2px;
+    width: 50px;
+    background-color: black;
+}
+.img1{
+    height: 400px;
+    width: 800px;
+}
+.img2{
+    height: 600px;
+    width: 100%;
+}
+.sec2{
+    position: relative;
+    z-index: -1;
+}
+.sec1{
+    gap: 15px;
+    background-color: white;
+}
+.text-in-image{
+    display: flex;
+    flex-direction: column;
+    color: red;
+    gap:30px;
+    position: absolute;
+}
+.sec3{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border-style: solid, 8px;
+    border-color: #1C6FAF;
+    height: 50px;
+    background-color:#CBE6EA ;
+}
+.two-button{
+    display: flex;
+}
+.infomation{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    width: 50%;
+    background-color:#CBE6EA;
+}
+.sec4{
+    display: flex;
+    gap: 15px;
+    height: 500px;
+    background-color: white;
+    align-items: stretch;
+}
+.sec5{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    gap:50px;
+}
+.pricing{
+    display: flex;
+    gap:100px;
+}
+.buy{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
