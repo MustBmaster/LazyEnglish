@@ -1,0 +1,29 @@
+
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: inline-flex;
+    gap:20px
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.for-cols{
+    display: flex;
+    gap:50px
+}
+.box{
+    padding: 10px;   
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}

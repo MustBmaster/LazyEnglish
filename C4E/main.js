@@ -197,3 +197,12 @@ console.log(typeof(tên))
 
 //      Callback:
 // là gọi 1 hàm bằng việc truyền nó vào 1 đối số
+
+var age=prompt("nhập tuổi");
+if(age<=14){
+    console.log('Tuổi gì đòi ăn mì')
+}else if(age<=21){
+    console.log('Vẫn còn non')
+}else{22
+    console.log("già vl")
+}
