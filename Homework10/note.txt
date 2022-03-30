@@ -1,0 +1,16 @@
+các phương thức DOM
+document.getElementById([id]): trỏ tới phần tử có id
+document.getElementByTagName('[tag]'): tương tự, nhưng trỏ tới 1 tag
+document.createElement():thêm vào tree 1 Elememt
+document.querySelector('[1 tag||1 selector của css]'): trỏ tới chính xác 1 thẻ nào đấy
+vẫn có quan hệ cha con
+[Element].parentNode : trỏ vào 1 thg cha của 1 Element
+[Element].textContent: thay đổi text của Element được chọn
+[Element].innerHTML='[1 thẻ của html]' : thêm vào 1 Element 1 thẻ html
+[Element].appendChild() :thêm 1 thg con vào Element
+[Element].removeChild([trỏ tơi thg con]) :bỏ 1 thg con vào Element
+[Element].onclick= function(){} : thực hiện function khi click vào 1 Element
+[Element].style.[1 thuộc tính CSS]='[giá trị]': thay giá trị thuộc tính css của Element
+[Element].setAttribute([tên thuộc tính css],[Giá trị]): thay đổi giá trị của 1 thuộc tính css của Element
+[Element].removeAttribute([Tên thuộc tính]): bỏ đi 1 thuộc tính
+[Element].prepend([Elememt]): thêm vào bên trong đầu Elememt 1 Elememt với append là thêm vào cuối

@@ -1,0 +1,42 @@
+#question {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+    height: 300px;
+    line-height: 300px;
+    font-size: 20px;
+    font-family: 'Grandstander', cursive;
+    border-radius: 10px;
+}
+#answers {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#answers > div {
+    width: 200px;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-family: 'Grandstander', cursive;
+}
+
+#yes {
+    background-color: #19A15F;
+}
+
+#no {
+    background-color: #DD4F42;
+}
+
+#app {
+    width: 500px;
+    margin: 0px auto;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}

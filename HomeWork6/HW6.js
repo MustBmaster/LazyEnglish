@@ -32,7 +32,7 @@ function Bai2(n){
 function Bai3(m,n){
     let Line="";
     for(let i=0;i<m;i++){
-        Line+="*"
+        Line+="*";
     }
     for(let i=0;i<n;i++){
         console.log(Line)
@@ -43,8 +43,8 @@ function Bai3(m,n){
 function Bai4(m){
     let Line="";
     for(let i=0;i<m;i++){
-        Line+="*"
-        console.log(Line)
+        Line+="*"   
+        console.log(Line)  
     }
 }
 
@@ -55,4 +55,5 @@ function Bai5(){
     if(n!=m) Bai5();
     else alert("Đoán mò giỏi đấy")
 }
-Bai5();
+// Bai5();
+

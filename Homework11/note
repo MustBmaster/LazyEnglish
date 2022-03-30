@@ -1,0 +1,11 @@
+tiếp tục học về DOM event
+1 thẻ sẽ có 3 phần:
+specific attribute: chỉ có thẻ này mới có, ví dụ như chỉ a mơi có href
+global attribute: cái mà thẻ nào cũng có thể có: như là id
+event attribute: như là cái onclick, xảy ra theo hành động
+người ta thường dùng hàm để xử lí sự kiện
+
+cái add event listener khác cái onclick:
+cái onclick là thực hiện ngay sự kiện cuối cùng dựa trên click
+cái addEventListener sẽ thêm 1 sự kiện vào chuỗi sự kiện của element
+phần lớn các component nó sẽ được gen bằng js
