@@ -48,3 +48,11 @@ function Bai4(m){
     }
 }
 
+// bài 5
+function Bai5(){
+    let m=82
+    n=prompt("nhập số")
+    if(n!=m) Bai5();
+    else alert("Đoán mò giỏi đấy")
+}
+Bai5();
